@@ -20,6 +20,12 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+
+  imageUrl: {
+    type: Sequelize.STRING,
+    defaultValue: "https://img2.storyblok.com/fit-in/1200x630/f/64062/992x736/b1f6d2c25f/campus-a1.jpg",
+    allowNull: true
   }
 });
 
