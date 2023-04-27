@@ -15,7 +15,24 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  gpa: {
+    type: Sequelize.FLOAT,
+    allowNull: true
+  },
+
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+
+  imageUrl: {
+    type: Sequelize.STRING,
+    defaultValue: "https://wallpapercave.com/wp/wp6124209.jpg",
+    allowNull: true
   }
+
 });
 
 // Export the student model
