@@ -19,7 +19,6 @@ const Student = db.define("student", {
 
   gpa: {
     type: Sequelize.FLOAT,
-    allowNull: true
   },
 
   email: {
@@ -30,7 +29,6 @@ const Student = db.define("student", {
   imageUrl: {
     type: Sequelize.STRING,
     defaultValue: "https://wallpapercave.com/wp/wp6124209.jpg",
-    allowNull: true
   }
 
 });
